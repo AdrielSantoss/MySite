@@ -118,24 +118,16 @@ hr {
     cursor: pointer;
     margin: 10px;
 }
-.project-myEnglish{
-    width: 200px;
-    height: 200px;
-    background-image: url('./img/bg.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    border-radius: 3%;
-    cursor: pointer;
-    margin: 10px;
-    
-}
 .hide{
+    transition: 0.5s;
     display: none;
 }
-.project:hover .project-name{
-    opacity: 1;
+.show{
+    transition: 0.5s;
+    display: block;
+
 }
-.project-myEnglish:hover .project-name{
+.project:hover .project-name{
     opacity: 1;
 }
 .project-name{
@@ -145,6 +137,21 @@ hr {
     padding: 10px;
     transition: 1s;
     opacity: 0;
+
+}
+.project-name-opacity{
+    display: flex;   
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.349);
+    padding: 10px;
+    transition: 1s;
+    opacity: 1;
+
+}
+.project-name-opacity span {
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .project-name span{
     font-size: 20px;
@@ -152,7 +159,8 @@ hr {
     font-family: Arial, Helvetica, sans-serif;
     
 }
-.project-content-myEnglish{
+.project-content{
+    transition: 0.3s;
     display: flex;
     flex-direction: column;
 }
@@ -169,6 +177,32 @@ hr {
     height: 500px;
 }
 
+/* Imgs */
+
+#react {
+    background-image: url('./img/react.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
+#vue {
+    background-image: url('./img/vue.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 178%;
+}
+#angular {
+    background-image: url('./img/angular.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 178%;
+}
+#node {
+    background-image: url('./img/node.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 200%;
+}
 
 
 

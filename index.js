@@ -1,15 +1,37 @@
 
-$('.project-content-articles').removeClass().addClass('hide')
-$('.project-content-notes').removeClass().addClass('hide')
+ $('#articles-content').removeClass().addClass('hide')
+ $('#notes-content').removeClass().addClass('hide')
+ $('#myEnglish-name').removeClass().addClass('project-name-opacity')
 
-$('.project-content-myEnglish').click(()=>{
-    $('.project-content-myEnglish').removeClass().addClass('hide')
-})
+ $('#articles').click(function(){
+     $('#articles-content').removeClass().addClass('project-content-articles')
+     $('#myEnglish-content').removeClass().addClass('hide')
+     $('#notes-content').removeClass().addClass('hide')
+     $('#articles-name').removeClass().addClass('project-name-opacity')
+     $('#myEnglish-name').removeClass().addClass('project-name')
+     $('#notes-name').removeClass().addClass('project-name')
 
-$('.project-content-articles').click(()=>{
-    $('.project-content-myEnglish').removeClass().addClass('hide')
-})
+ })
+ 
+ $('#myEnglish').click(function(){
+     $('#articles-content').removeClass().addClass('hide')
+     $('#myEnglish-content').removeClass().addClass('project-content-myEnglish')
+     $('#notes-content').removeClass().addClass('hide')
+     $('#articles-name').removeClass().addClass('project-name')
+     $('#myEnglish-name').removeClass().addClass('project-name-opacity')
+     $('#notes-name').removeClass().addClass('project-name')
 
-$('.project-content-notes').click(()=>{
-    $('.project-content-myEnglish').removeClass().addClass('hide')
-})
+
+ })
+
+ $('#notes').click(function(){
+     $('#articles-content').removeClass().addClass('hide')
+     $('#myEnglish-content').removeClass().addClass('hide')
+     $('#notes-content').removeClass().addClass('project-content-notes')
+     $('#articles-name').removeClass().addClass('project-name')
+     $('#myEnglish-name').removeClass().addClass('project-name')
+     $('#notes-name').removeClass().addClass('project-name-opacity')
+
+ })
+
+
