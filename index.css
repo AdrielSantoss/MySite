@@ -12,8 +12,6 @@ hr {
 
 }
 
-
-
 /* Header - aside left*/
 .left {
     position: fixed;
@@ -183,7 +181,7 @@ hr {
     background-image: url('./img/react.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 200%;
+    background-size: 250%;
 }
 #vue {
     background-image: url('./img/vue.png');
@@ -203,10 +201,19 @@ hr {
     background-repeat: no-repeat;
     background-size: 200%;
 }
+#php{
+    margin-top: 50px;
+}
+#node{
+    margin-top: 50px;
+}
+#BeJ{
+    margin-top: 50px;
+}
 
 /*Responsiveness*/
 
-@media(max-width: 1500px){
+@media(max-width: 1000px){
     .home {
         display: flex;
         flex-direction: column;
@@ -252,7 +259,32 @@ hr {
     #text-header-2{
         display:none
     }
-    
+    .project{
+        width: 100px;
+        height: 100px;
+    }
+    .project-name span{
+        font-size: 15px;
+    }
+    .col{
+        display: flex;
+        justify-content: center;
+        margin: 10px;
+
+    }
+    #php{
+        margin-top: 0px;
+    }
+    #node{
+        margin-top: 10px;
+    }
+    #BeJ{
+        margin-top: 0PX;
+    }
+    .carousel-item{
+        width: 100%;
+        height: 300px;
+    }
 }
 
 
